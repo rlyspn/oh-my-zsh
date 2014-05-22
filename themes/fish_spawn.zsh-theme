@@ -10,7 +10,7 @@ time=$time_enabled
 LOCATION_PROMPT="%{$fg_bold[cyan]%}%n%{$fg_bold[red]%}@%{$fg_bold[cyan]%}%m%{$fg_bold[red]%}:%{$fg_bold[cyan]%}%2~%"
 
 PROMPT='%{$fg_bold[green]%}┌[%{$fg_bold[cyan]%}${time}%{$fg_bold[green]%}]-($LOCATION_PROMPT{$fg_bold[green]%})-$(git_prompt_info_no_status)$(battery_pct_prompt)
-└> % %{$reset_color%}'
+%{$fg_bold[green]%}└> % %{$reset_color%}'
 
 # get the name of the branch without the status.
 function git_prompt_info_no_status() {
@@ -22,4 +22,4 @@ function git_prompt_info_no_status() {
 }
 
 ZSH_THEME_GIT_PROMPT_PREFIX="[%{$reset_color%}%{$fg_bold[cyan]%}git%{$fg_bold[red]%}:%{$fg_bold[cyan]%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg_bold[green]%}]➜ "
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg_bold[green]%}]-"
